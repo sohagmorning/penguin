@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>penguin fassion </title>
+
+    <!-- google font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- tailwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<style>
+	body {
+		background-color: #f4f4f5;
+		font-family: 'Roboto', sans-serif;
+		color: #3a3a3a;
+	}
+
+	h1,
+	h2 {
+		font-family: 'Bebas Neue', sans-serif;
+		letter-spacing: 0.02em;
+	}
+
+	h3 {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 700;
+	}
+
+	p,
+	li,
+	span,
+	button {
+		font-family: 'Roboto', sans-serif;
+	}
+
+	.btn-buy {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		background: linear-gradient(135deg, #a4bc46 0%, #8faa2f 100%);
+		color: #ffffff;
+		font-size: 0.75rem;
+		font-weight: 700;
+		padding: 0.75rem 1.25rem;
+		border-radius: 0.5rem;
+		box-shadow: 0 8px 16px rgba(143, 170, 47, 0.25);
+		transition: transform 0.15s ease, box-shadow 0.2s ease, filter 0.2s ease;
+		white-space: nowrap;
+	}
+
+	.btn-buy:hover {
+		transform: translateY(-1px);
+		box-shadow: 0 10px 20px rgba(143, 170, 47, 0.35);
+		filter: brightness(1.03);
+	}
+
+	.product-card {
+		background: #ffffff;
+		border-radius: 1rem;
+		padding: 1rem;
+		box-shadow: 0 10px 24px rgba(17, 24, 39, 0.06);
+		border: 1px solid #eceef4;
+	}
+
+	.product-image-wrap {
+		background: #f1f1f3;
+		border-radius: 1rem;
+	}
+</style>
+
+
+</head>
+<body>
+<header class="bg-[#FFFBF0]"> 
+    <nav class="flex justify-between items-center container mx-auto py-4  ">
+        <img src="images/logo.png" alt="Penguin Fashion Logo" class="w-[225px] h-[31px]">
+        <ul class="flex  items-center gap-6 text-lg font-medium">
+            <li>Home</li>
+            <li>Product</li>
+            <li>About us</li>
+            <li>Contact us</li>
+        </ul>
+    </nav>
+    <!-- banner -->
+     <section class="flex justify-between items-center container mx-auto py-10 gap-4">
+        <div  >
+            <div class="uppercase text-5xl sm:text-6xl leading-tight font-extrabold tracking-wide"> 
+			<h2 class="text-6xl sm:text-7xl lg:text-8xl font-bold leading-none" style="color: #FABE4C;">Be the Penguins
+            </h2>
+			<h2 class="text-5xl sm:text-6xl lg:text-7xl font-bold leading-none" style="color: #363958;">of Winter</h2>
+</div>
+
+			<p>Lorem Ipsum is simply dummy text of the printing 
+and typesetting industry.</p>
+<button type="button" class="btn-buy">BUY NOW</button>
+
+        </div>
+        <img src="images/model.png" alt="">
+
+     </section>
+    </header>
+
+    <main class="py-12">
+		<section id="women" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+			<h2 class="uppercase text-5xl text-[#363958] font-bold tracking-wide">Woman Jacket</h2>
+
+			<div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+				<article class="product-card">
+					<div class="product-image-wrap p-6">
+						<img src="images/jacket-1.png" alt="Yellow Coat Jacket" class="w-full h-56 object-contain" />
+					</div>
+					<h3 class="mt-4 text-[2rem] leading-none text-[#363958]">Yellow Coat Jacket</h3>
+					<p class="mt-2 text-sm text-gray-500">Classic fit with comfortable insulation and durable fabric for daily winter wear.</p>
+					<div class="mt-4 flex items-center justify-between gap-3">
+						<span class="text-3xl font-black text-yellow-500">$234</span>
+						<button class="btn-buy">
+							<img src="icons/shopping-cart%201.png" alt="Cart" class="w-4 h-4" /> BUY NOW
+						</button>
+					</div>
+				</article>
+
+				<article class="product-card">
+					<div class="product-image-wrap p-6">
+						<img src="images/jacket-2.png" alt="Ladies Jacket" class="w-full h-56 object-contain" />
+					</div>
+					<h3 class="mt-4 text-[2rem] leading-none text-[#363958]">Ladies Jacket</h3>
+					<p class="mt-2 text-sm text-gray-500">Lightweight and warm with a modern cut, designed to elevate your winter style.</p>
+					<div class="mt-4 flex items-center justify-between gap-3">
+						<span class="text-3xl font-black text-yellow-500">$234</span>
+						<button class="btn-buy">
+							<img src="icons/shopping-cart%201.png" alt="Cart" class="w-4 h-4" /> BUY NOW
+						</button>
+					</div>
+				</article>
+
+				<article class="product-card">
+					<div class="product-image-wrap p-6">
+						<img src="images/jacket-3.png" alt="Woman Leather Jacket" class="w-full h-56 object-contain" />
+					</div>
+					<h3 class="mt-4 text-[2rem] leading-none text-[#363958]">Woman Leather Jacket</h3>
+					<p class="mt-2 text-sm text-gray-500">Soft premium leather texture combined with a bold silhouette for cool evenings.</p>
+					<div class="mt-4 flex items-center justify-between gap-3">
+						<span class="text-3xl font-black text-yellow-500">$234</span>
+						<button class="btn-buy">
+							<img src="icons/shopping-cart%201.png" alt="Cart" class="w-4 h-4" /> BUY NOW
+						</button>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-14">
+			<h2 class="uppercase text-5xl text-[#363958] font-bold tracking-wide">Man Jacket</h2>
+
+			<div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+				<article class="product-card">
+					<div class="product-image-wrap p-6">
+						<img src="images/jacket-4.png" alt="Snowboard Jacket Mens" class="w-full h-56 object-contain" />
+					</div>
+					<h3 class="mt-4 text-[2rem] leading-none text-[#363958]">Snowboard Jacket Mens</h3>
+					<p class="mt-2 text-sm text-gray-500">Engineered for outdoor action with weather resistance and breathable comfort.</p>
+					<div class="mt-4 flex items-center justify-between gap-3">
+						<span class="text-3xl font-black text-yellow-500">$234</span>
+						<button class="btn-buy">
+							<img src="icons/shopping-cart%201.png" alt="Cart" class="w-4 h-4" /> BUY NOW
+						</button>
+					</div>
+				</article>
+
+				<article class="product-card">
+					<div class="product-image-wrap p-6">
+						<img src="images/jacket-5.png" alt="Man Leather Jackets" class="w-full h-56 object-contain" />
+					</div>
+					<h3 class="mt-4 text-[2rem] leading-none text-[#363958]">Man Leather Jackets</h3>
+					<p class="mt-2 text-sm text-gray-500">Refined leather finish with clean lines and sturdy detailing for timeless style.</p>
+					<div class="mt-4 flex items-center justify-between gap-3">
+						<span class="text-3xl font-black text-yellow-500">$234</span>
+						<button class="btn-buy">
+							<img src="icons/shopping-cart%201.png" alt="Cart" class="w-4 h-4" /> BUY NOW
+						</button>
+					</div>
+				</article>
+
+				<article class="product-card">
+					<div class="product-image-wrap p-6">
+						<img src="images/jacket-6.png" alt="Man Casual Jackets" class="w-full h-56 object-contain" />
+					</div>
+					<h3 class="mt-4 text-[2rem] leading-none text-[#363958]">Man Casual Jackets</h3>
+					<p class="mt-2 text-sm text-gray-500">Perfect balance of warmth and lightweight comfort for every city commute.</p>
+					<div class="mt-4 flex items-center justify-between gap-3">
+						<span class="text-3xl font-black text-yellow-500">$234</span>
+						<button class="btn-buy">
+							<img src="icons/shopping-cart%201.png" alt="Cart" class="w-4 h-4" /> BUY NOW
+						</button>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section id="about" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
+			<div class="grid lg:grid-cols-2 gap-10 items-center">
+				<div class="order-2 lg:order-1 space-y-4" id="contact">
+					<article class="bg-white rounded-xl shadow-sm p-5 flex gap-4 items-start">
+						<img src="icons/house.png" alt="Perfect Fit" class="w-12 h-12" />
+						<div>
+							<h3 class="text-lg font-bold text-gray-800">Find the Perfect Fit</h3>
+							<p class="mt-1 text-sm text-gray-500">Discover hand-picked jackets that match your body and your lifestyle.</p>
+						</div>
+					</article>
+
+					<article class="bg-white rounded-xl shadow-sm p-5 flex gap-4 items-start">
+						<img src="icons/box.png" alt="Free Exchanges" class="w-12 h-12" />
+						<div>
+							<h3 class="text-lg font-bold text-gray-800">Free Exchanges</h3>
+							<p class="mt-1 text-sm text-gray-500">Easy replacement and hassle-free support if your chosen size needs a swap.</p>
+						</div>
+					</article>
+
+					<article class="bg-white rounded-xl shadow-sm p-5 flex gap-4 items-start">
+						<img src="icons/question.png" alt="Contact Seller" class="w-12 h-12" />
+						<div>
+							<h3 class="text-lg font-bold text-gray-800">Contact Our Seller</h3>
+							<p class="mt-1 text-sm text-gray-500">Need help with style or size? Our team is ready to assist you quickly.</p>
+						</div>
+					</article>
+				</div>
+
+				<div class="order-1 lg:order-2 flex justify-center">
+					<img src="images/shopping.png" alt="Shopping illustration" class="w-full max-w-md" />
+				</div>
+			</div>
+		</section>
+	</main>
+    
+</body>
+</html>
